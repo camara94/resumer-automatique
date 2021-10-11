@@ -110,3 +110,13 @@ Ici nous allons récupéerer tous **mots** de l'article et leurs nombre de rép�
     occurs_mots = cv_fit.toarray().sum(axis=0)
 </code>
 </pre>
+
+## Dictionnaire de mot 
+Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'article.
+* dict() permet de créer un dictionnaire en python
+* zip() prend deux liste: utilise la première comme les clées et la deuxième comme les valeurs
+<pre>
+<code>
+    freq_mots = dict(zip(mots, occurs_mots))
+</code>
+</pre>
