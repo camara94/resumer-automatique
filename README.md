@@ -74,3 +74,7 @@ Dans cette sous section, nous allons importer les la classe **CountVectorizer**,
 Ici nous allons charger le dictionnaire français qui contient la plupart  des mots français.<br>
 
 <code>nlp = fr_core_news_sm.load()</code>
+
+## Créer un document 
+Ici nous allons matcher notre article au dictionnaire qu'on vient de charger plus haut.<br>
+<code>doc = nlp(article)</code>
