@@ -172,3 +172,22 @@ voir le code ci-dessous
         top_synthese = top_importante_phrase[:3]
     </code>
 </pre>
+
+## Résumé de l'article
+Ici nous allons faire la synthèse automatique de l'article
+maintenant.
+
+<pre>
+    <code>
+        brouillon = [];
+        resumer = ""
+        for phrase, score in score_phrase.items():
+            if score in top_synthese:
+                brouillon.append(phrase)
+            else:
+                continue
+                
+        for phrase in brouillon:
+            resume = '{} '.format(phrase)
+    </code>
+</pre>
