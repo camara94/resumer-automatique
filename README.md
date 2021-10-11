@@ -135,3 +135,21 @@ Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'ar
     print("Les mots les plus fréquents sont: ", mot_plus_freq)
 </code>
 </pre>
+
+## Determiner la fréquence des mots
+
+### Récupérer le nombre max d'occurence
+<pre>
+    <code>
+        freq_mot_plus_freq = valeurs[-1]
+        freq_mot_plus_freq 
+    </code>
+</pre>
+
+### Dictionnaire de fréquence
+<pre>
+    <code>
+        for mot in freq_mots:
+            freq_mots[mot] = (freq_mots[mot]/freq_mot_plus_freq)
+    </code>
+</pre>
