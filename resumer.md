@@ -1,3 +1,8 @@
+Auteur: CAMARA Laby Damaro
+
+Email: ldamaro98@gmail.com
+
+------
 # Résumé Automatique
 En général, les algorithmes de récapitulation sont soit extractifs, soit abstractifs en fonction du résumé généré. Les algorithmes d'extraction forment des résumés en identifiant et en collant ensemble les sections pertinentes du texte d'entrée. Ainsi, ils ne dépendent que de l'extraction des phrases du texte original. Pour une telle raison, les méthodes d'extraction produisent naturellement des résumés grammaticaux et nécessitent relativement peu d'analyse linguistique.
 
@@ -5,7 +10,8 @@ En revanche, les algorithmes abstractifs sont les plus humains et imitent le pro
 
 ## Projet
 Dans cet article, nous allons partir sur le site de la radio **Mosaïque FM**. Lorsqu'un utilisateur saisi une URL on fait le résumé de l'article en question en utilisant l'approche extractive.
-Nous allons decomposer le travail en deux partie:
+Nous allons décomposer le travail en deux partie:
+
 * une première partie consistera à faire du web scraping avec les packages <code>**request**</code> et <code>**BeautifulSoup**</code>
 * la partie II, nous allons utiliser le <code>**sklearn**</code>, le Framework <code>**spacy**</code> pour faire notre résumé automatique
   
@@ -25,7 +31,7 @@ Avant de commencer, il faut installer **requests** et **bs4**:
 Ici dans cette section, vous allons inviter l'utilisateur à saisir l'URL de l'article à résumer.
 <pre>
 <code>
-    url  = input('Veuillez donner l\'url de l\'article:')
+    url  = input("Veuillez donner l'url de l'article:")
     url
 </code>
 </pre>
@@ -177,8 +183,8 @@ voir le code ci-dessous
 Ici nous allons faire la synthèse automatique de l'article
 maintenant.
 
-<pre>
-    <code>
+
+<code>
         brouillon = [];
         resumer = ""
         for phrase, score in score_phrase.items():
@@ -186,9 +192,7 @@ maintenant.
                 brouillon.append(phrase)
             else:
                 continue
-                
+
         for phrase in brouillon:
             resume = '{} '.format(phrase)
-    </code>
-</pre>
-
+</code>
