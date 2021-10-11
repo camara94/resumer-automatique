@@ -9,4 +9,7 @@ Nous allons decomposer le travail en deux partie:
 * une première partie consistera à faire du web scraping avec les packages <code>**request**</code> et <code>**BeautifulSoup**</code>
 * la partie II, nous allons utiliser le <code>**sklearn**</code>, le Framework <code>**spacy**</code> pour faire notre résumé automatique
   
-  
+## Partie I: Web Scraping en python
+Avant de commencer, il faut installer **requests** et **bs4**:
+* pip install requests --user
+* pip install bs4 --user
