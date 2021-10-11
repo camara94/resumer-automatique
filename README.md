@@ -58,3 +58,14 @@ la methode **find_all('div')** permet de récuperer tous les div de la page, une
 
 ## Partie II
 Dans cette section, nous allons réaliser la synthèse automatique à travers le Frameword **spacy** et le package **sklearn**
+
+## Importatation des packages
+Dans cette sous section, nous allons importer les la classe **CountVectorizer**, **STOP_WORDS**, **fr_core_news_sm** et le Framework **spacy**
+<pre>
+<code>
+    from sklearn.feature_extraction.text import CountVectorizer
+    import spacy
+    from spacy.lang.fr.stop_words import STOP_WORDS
+    import fr_core_news_sm
+</code>
+</pre>
