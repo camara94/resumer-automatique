@@ -21,3 +21,11 @@ Avant de commencer, il faut installer **requests** et **bs4**:
     from bs4 import BeautifulSoup
 </code>
 </pre>
+## L'URL de l'article à résumé
+Ici dans cette section, vous allons inviter l'utilisateur à saisir l'URL de l'article à résumer.
+<pre>
+<code>
+    url  = input('Veuillez donner l\'url de l\'article:')
+    url
+</code>
+</pre>
