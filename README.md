@@ -132,6 +132,6 @@ Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'ar
     freq_mots = dict(zip(mots, occurs_mots))
     valeurs = sorted(freq_mots.values())
     mot_plus_freq = [ mot for mot, freq in freq_mots.items() if freq in valeurs[-3:] ]
-    ts les plus fréquents sont: ", mot_plus_freq)
+    print("Les mots les plus fréquents sont: ", mot_plus_freq)
 </code>
 </pre>
