@@ -101,4 +101,12 @@ Nous allons lier notre corpus au modèle que nous venons de créer:
 </code>
 </pre>
 
+## Liste des mots et nombres de mots
+Ici nous allons récupéerer tous **mots** de l'article et leurs nombre de répétition dans chaque phrase.
 
+<pre>
+<code>
+    mots = cv.get_feature_names();
+    occurs_mots = cv_fit.toarray().sum(axis=0)
+</code>
+</pre>
