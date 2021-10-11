@@ -38,3 +38,20 @@ Ici nous allons faire une requête avec l'url qu'on vient de saisir ci-dessus et
     soup = BeautifulSoup(reponse.text)
 </code>
 </pre>
+
+## Créer article
+Après avoir inspecter le site web de **mosaïque FM** nous constatons que l'article est contenu dans le div qui a la class dont la valeur est **desc**. Nous allons créer une variable **article** pour affecter l'article récuperer,
+la methode **find_all('div')** permet de récuperer tous les div de la page, une fois tous les div récuperer nous allons chercher seulement le div qui a la class **desc** et enfin on affecte son contenu textuel à notre variable **article**. voici le code python ci-dessous:
+
+<pre>
+<code>
+    article = ""
+    for div in soup.find_all('div'):
+        try:
+            if 'desc' in div.attrs['class']:
+                article = div.text
+                break;
+        except:
+            pass
+</code>
+</pre>
