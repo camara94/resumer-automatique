@@ -30,8 +30,8 @@ Ici dans cette section, vous allons inviter l'utilisateur à saisir l'URL de l'a
 </code>
 </pre>
 
-## Faire une requête et créer un objet BeautilSoup
-
+## Faire une requête et créer un objet BeautifulSoup
+Ici nous allons faire une requête avec l'url qu'on vient de saisir ci-dessus et créer un objet BeautifulSoup pour récupérer le contenu de l'article à travers le webscrping.
 <pre>
 <code>
     reponse = req.get(url)
