@@ -84,3 +84,21 @@ Nous allons créer un corpus de token de phrase:
 * on utilise la syntaxe **list compréhension** pour créer un liste de phrase qui constituera nos tokens
 * l'attribut **sents** transforme un texte en une liste de token de phrase
 * la methode **lower()** transforme un texte tout en miniscule 
+
+## Model CountVectorizer
+Nous allons créer un model **CountVectorizer** en passant en paramètre les **STOP_WORDS**.
+### STOP_WORDS
+les **STOP_WORDS** sont des mots les plus employés mais qui n'apportent pas assez d'information à la phrase.<br>
+Exemple: les adverbes, prépositions, auxiliaires... .<br/>
+
+<code>cv = CountVectorizer(stop_words=list(STOP_WORDS))</code>
+
+## Lier notre corpus
+Nous allons lier notre corpus au modèle que nous venons de créer:
+<pre>
+<code>
+    cv_fit = cv.fit_transform(corpus)
+</code>
+</pre>
+
+
