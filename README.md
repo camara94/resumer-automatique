@@ -69,3 +69,8 @@ Dans cette sous section, nous allons importer les la classe **CountVectorizer**,
     import fr_core_news_sm
 </code>
 </pre>
+
+## Charger le dictionnaire
+Ici nous allons charger le dictionnaire français qui contient la plupart  des mots français.<br>
+
+<code>nlp = fr_core_news_sm.load()</code>
