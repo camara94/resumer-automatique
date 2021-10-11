@@ -29,3 +29,12 @@ Ici dans cette section, vous allons inviter l'utilisateur à saisir l'URL de l'a
     url
 </code>
 </pre>
+
+## Faire une requête et créer un objet BeautilSoup
+
+<pre>
+<code>
+    reponse = req.get(url)
+    soup = BeautifulSoup(reponse.text)
+</code>
+</pre>
