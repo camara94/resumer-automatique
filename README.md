@@ -13,3 +13,11 @@ Nous allons decomposer le travail en deux partie:
 Avant de commencer, il faut installer **requests** et **bs4**:
 * pip install requests --user
 * pip install bs4 --user
+
+## Importation des packages pour webscrapy
+<pre>
+<code>
+    import requests as req
+    from bs4 import BeautifulSoup
+</code>
+</pre>
