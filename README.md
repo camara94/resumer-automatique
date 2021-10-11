@@ -153,3 +153,22 @@ Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'ar
             freq_mots[mot] = (freq_mots[mot]/freq_mot_plus_freq)
     </code>
 </pre>
+
+## Affectation des score aux phrase
+Le score d'une phrase est égal à la somme des fréquence des mots  qui la compose.<br />
+voir le code ci-dessous
+
+<pre>
+    <code>
+        score_phrase = {}
+        for phrase in doc.sents:
+            for mot in phrase:
+                if mot.text.lower() in freq_mots.keys():
+                    if phrase in score_phrase.keys():
+                        score_phrase[phrase] += freq_mots[mot.text.lower()]
+                    else:
+                        score_phrase[phrase] = freq_mots[mot.text.lower()]
+        top_importante_phrase = (sorted(score_phrase.values())[::-1])
+        top_synthese = top_importante_phrase[:3]
+    </code>
+</pre>
