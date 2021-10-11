@@ -120,3 +120,18 @@ Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'ar
     freq_mots = dict(zip(mots, occurs_mots))
 </code>
 </pre>
+
+## Trier et afficher les mots les plus fréquents
+* **sorted()** permet de trier les éléments d'une liste
+* **items()** retourne deux liste une première les **clées** et une deuxième les **valeurs** et je stocke les clées dans **mot** et leurs **valeurs** dans **freq**
+* je stocke les mots les plus fréquents dans la variable **mot_plus_freq**
+* et enfin j'affiche le résultat
+
+<pre>
+<code>
+    freq_mots = dict(zip(mots, occurs_mots))
+    valeurs = sorted(freq_mots.values())
+    mot_plus_freq = [ mot for mot, freq in freq_mots.items() if freq in valeurs[-3:] ]
+    ts les plus fréquents sont: ", mot_plus_freq)
+</code>
+</pre>
