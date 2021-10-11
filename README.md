@@ -78,3 +78,9 @@ Ici nous allons charger le dictionnaire français qui contient la plupart  des m
 ## Créer un document 
 Ici nous allons matcher notre article au dictionnaire qu'on vient de charger plus haut.<br>
 <code>doc = nlp(article)</code>
+
+## Créer des token
+Nous allons créer un corpus de token de phrase:
+* on utilise la syntaxe **list compréhension** pour créer un liste de phrase qui constituera nos tokens
+* l'attribut **sents** transforme un texte en une liste de token de phrase
+* la methode **lower()** transforme un texte tout en miniscule 
