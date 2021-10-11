@@ -55,3 +55,6 @@ la methode **find_all('div')** permet de récuperer tous les div de la page, une
             pass
 </code>
 </pre>
+
+## Partie II
+Dans cette section, nous allons réaliser la synthèse automatique à travers le Frameword **spacy** et le package **sklearn**
