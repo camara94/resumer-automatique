@@ -154,7 +154,7 @@ Nous allons créer un dictionnaire de mots et leurs nombre d'occurence dans l'ar
     </code>
 </pre>
 
-## Affectation des score aux phrase
+## Affectation des score aux phrases
 Le score d'une phrase est égal à la somme des fréquence des mots  qui la compose.<br />
 voir le code ci-dessous
 
